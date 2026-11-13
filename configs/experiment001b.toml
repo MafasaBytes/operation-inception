@@ -1,0 +1,30 @@
+# A single causal-assembly treatment. Seeded choreography, not collision physics.
+[simulation]
+model = "causal-assembly"
+seed = 1001
+target_radius = 0.32
+particle_radius = 0.0125
+center_x = 0.445
+center_y = 0.78
+seed_lock_seconds = 0.43
+neighbors_start_seconds = 0.47
+neighbors_lock_seconds = 0.90
+main_lock_seconds = 4.20
+hero_start_seconds = 4.45
+hero_lock_seconds = 5.15
+duration_seconds = 6.20
+
+[render]
+preview_width = 360
+preview_height = 640
+final_width = 1080
+final_height = 1920
+fps = 30
+supersample = 2
+background = "#0b111a"
+background_bloom = 0.08
+particle_color = "#f5e4be"
+accent_color = "#6be1e1"
+trail_seconds = 0.035
+resolution_pulse = 0.0
+crf = 18

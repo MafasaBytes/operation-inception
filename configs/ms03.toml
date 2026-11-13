@@ -1,0 +1,14 @@
+# One directed game choreography; deliberately restricted to the review format.
+seed = 303
+width = 360
+height = 640
+fps = 30
+duration_seconds = 24.0
+ivory_count = 42
+bead_radius = 9.5
+arena_radius = 185.0
+first_hit_seconds = 0.9
+near_miss_seconds = [21.4, 22.3]
+final_hit_seconds = 23.166666666666668
+reset_seconds = 23.9
+audio_sample_rate = 48000

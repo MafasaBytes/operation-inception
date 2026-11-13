@@ -1,0 +1,47 @@
+schema_version = "ms04.4.presentation.v1"
+
+[source]
+search_output = "outputs/ms04.3/ms04.3-search-v1.json"
+match_id = "ms04.3.three-team.v1.seed-4304"
+
+[clock]
+intro_seconds = 0.0
+team_reveal_turns = 3
+team_reveal_turn_seconds = 0.32
+opening_slow_turns = 9
+opening_turn_seconds = 0.48
+regular_turn_seconds = 0.20
+placement_delay = 0.035
+first_explosion_delay = 0.11
+explosion_spacing = 0.085
+orb_travel_seconds = 0.045
+neighbor_stagger_seconds = 0.004
+post_event_hold = 0.08
+elimination_pause = 0.16
+winner_pause = 0.24
+winner_hold_seconds = 1.60
+
+[render]
+width = 720
+height = 1280
+fps = 30
+supersample = 2
+board_left = 42
+board_top = 112
+cell_size = 96
+cell_gap = 4
+background_top = "#071019"
+background_bottom = "#0B1823"
+cell_fill = "#122736"
+grid_line = "#365469"
+orb_outline = "#02070C"
+players = ["cyan", "orange", "violet"]
+team_colors = ["#12DCE8", "#FF7518", "#B56EFF"]
+crf = 16
+
+[audio]
+seed = 404
+sample_rate = 48000
+channels = 2
+voices = [0, 1, 2]
+charged_ratio_minimum = 0.75

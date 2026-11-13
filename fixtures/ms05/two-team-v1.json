@@ -1,0 +1,479 @@
+{
+  "schema_version": "ms05.audio-events.v1",
+  "log_id": "ms05.synthetic.two-team.v1",
+  "synthetic": true,
+  "duration_seconds": 12.0,
+  "teams": [
+    {
+      "id": "cyan",
+      "voice": 0
+    },
+    {
+      "id": "orange",
+      "voice": 1
+    }
+  ],
+  "events": [
+    {
+      "id": "v1-e00",
+      "sequence": 0,
+      "time_seconds": 0.25,
+      "kind": "turn_started",
+      "team_id": "cyan"
+    },
+    {
+      "id": "v1-e01",
+      "sequence": 1,
+      "time_seconds": 0.55,
+      "kind": "orb_placed",
+      "team_id": "cyan",
+      "cell": [
+        0,
+        0
+      ],
+      "orb_count": 1,
+      "critical_mass": 2
+    },
+    {
+      "id": "v1-e02",
+      "sequence": 2,
+      "time_seconds": 1.25,
+      "kind": "turn_started",
+      "team_id": "orange"
+    },
+    {
+      "id": "v1-e03",
+      "sequence": 3,
+      "time_seconds": 1.55,
+      "kind": "orb_placed",
+      "team_id": "orange",
+      "cell": [
+        0,
+        1
+      ],
+      "orb_count": 1,
+      "critical_mass": 3
+    },
+    {
+      "id": "v1-e04",
+      "sequence": 4,
+      "time_seconds": 2.25,
+      "kind": "turn_started",
+      "team_id": "cyan"
+    },
+    {
+      "id": "v1-e05",
+      "sequence": 5,
+      "time_seconds": 2.55,
+      "kind": "orb_placed",
+      "team_id": "cyan",
+      "cell": [
+        3,
+        2
+      ],
+      "orb_count": 1,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e06",
+      "sequence": 6,
+      "time_seconds": 3.25,
+      "kind": "turn_started",
+      "team_id": "orange"
+    },
+    {
+      "id": "v1-e07",
+      "sequence": 7,
+      "time_seconds": 3.55,
+      "kind": "orb_placed",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 1,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e08",
+      "sequence": 8,
+      "time_seconds": 4.25,
+      "kind": "turn_started",
+      "team_id": "cyan"
+    },
+    {
+      "id": "v1-e09",
+      "sequence": 9,
+      "time_seconds": 4.55,
+      "kind": "orb_placed",
+      "team_id": "cyan",
+      "cell": [
+        3,
+        2
+      ],
+      "orb_count": 2,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e10",
+      "sequence": 10,
+      "time_seconds": 4.55,
+      "kind": "cell_charged",
+      "team_id": "cyan",
+      "cell": [
+        3,
+        2
+      ],
+      "orb_count": 2,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e11",
+      "sequence": 11,
+      "time_seconds": 5.25,
+      "kind": "turn_started",
+      "team_id": "orange"
+    },
+    {
+      "id": "v1-e12",
+      "sequence": 12,
+      "time_seconds": 5.55,
+      "kind": "orb_placed",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 2,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e13",
+      "sequence": 13,
+      "time_seconds": 5.55,
+      "kind": "cell_charged",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 2,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e14",
+      "sequence": 14,
+      "time_seconds": 6.25,
+      "kind": "turn_started",
+      "team_id": "cyan"
+    },
+    {
+      "id": "v1-e15",
+      "sequence": 15,
+      "time_seconds": 6.55,
+      "kind": "orb_placed",
+      "team_id": "cyan",
+      "cell": [
+        3,
+        2
+      ],
+      "orb_count": 3,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e16",
+      "sequence": 16,
+      "time_seconds": 6.55,
+      "kind": "cell_charged",
+      "team_id": "cyan",
+      "cell": [
+        3,
+        2
+      ],
+      "orb_count": 3,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e17",
+      "sequence": 17,
+      "time_seconds": 7.25,
+      "kind": "turn_started",
+      "team_id": "orange"
+    },
+    {
+      "id": "v1-e18",
+      "sequence": 18,
+      "time_seconds": 7.55,
+      "kind": "orb_placed",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 3,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e19",
+      "sequence": 19,
+      "time_seconds": 7.55,
+      "kind": "cell_charged",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 3,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e20",
+      "sequence": 20,
+      "time_seconds": 8.0,
+      "kind": "turn_started",
+      "team_id": "cyan"
+    },
+    {
+      "id": "v1-e21",
+      "sequence": 21,
+      "time_seconds": 8.15,
+      "kind": "orb_placed",
+      "team_id": "cyan",
+      "cell": [
+        0,
+        0
+      ],
+      "orb_count": 2,
+      "critical_mass": 2
+    },
+    {
+      "id": "v1-e22",
+      "sequence": 22,
+      "time_seconds": 8.15,
+      "kind": "cell_became_critical",
+      "team_id": "cyan",
+      "cell": [
+        0,
+        0
+      ],
+      "orb_count": 2,
+      "critical_mass": 2
+    },
+    {
+      "id": "v1-e23",
+      "sequence": 23,
+      "time_seconds": 8.27,
+      "kind": "cell_exploded",
+      "team_id": "cyan",
+      "cell": [
+        0,
+        0
+      ],
+      "cascade_depth": 0
+    },
+    {
+      "id": "v1-e24",
+      "sequence": 24,
+      "time_seconds": 8.31,
+      "kind": "neighbor_captured",
+      "team_id": "cyan",
+      "cell": [
+        0,
+        1
+      ],
+      "previous_team_id": "orange"
+    },
+    {
+      "id": "v1-e25",
+      "sequence": 25,
+      "time_seconds": 8.65,
+      "kind": "turn_started",
+      "team_id": "orange"
+    },
+    {
+      "id": "v1-e26",
+      "sequence": 26,
+      "time_seconds": 8.85,
+      "kind": "orb_placed",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 4,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e27",
+      "sequence": 27,
+      "time_seconds": 8.85,
+      "kind": "cell_became_critical",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "orb_count": 4,
+      "critical_mass": 4
+    },
+    {
+      "id": "v1-e28",
+      "sequence": 28,
+      "time_seconds": 8.97,
+      "kind": "cell_exploded",
+      "team_id": "orange",
+      "cell": [
+        3,
+        3
+      ],
+      "cascade_depth": 0
+    },
+    {
+      "id": "v1-e29",
+      "sequence": 29,
+      "time_seconds": 9.01,
+      "kind": "neighbor_captured",
+      "team_id": "orange",
+      "cell": [
+        3,
+        2
+      ],
+      "previous_team_id": "cyan",
+      "cascade_depth": 1
+    },
+    {
+      "id": "v1-e30",
+      "sequence": 30,
+      "time_seconds": 9.02,
+      "kind": "cell_became_critical",
+      "team_id": "orange",
+      "cell": [
+        3,
+        2
+      ],
+      "orb_count": 4,
+      "critical_mass": 4,
+      "cascade_depth": 1
+    },
+    {
+      "id": "v1-e31",
+      "sequence": 31,
+      "time_seconds": 9.03,
+      "kind": "cascade_depth_increased",
+      "team_id": "orange",
+      "cascade_depth": 1
+    },
+    {
+      "id": "v1-e32",
+      "sequence": 32,
+      "time_seconds": 9.21,
+      "kind": "cell_exploded",
+      "team_id": "orange",
+      "cell": [
+        3,
+        2
+      ],
+      "cascade_depth": 1
+    },
+    {
+      "id": "v1-e33",
+      "sequence": 33,
+      "time_seconds": 9.25,
+      "kind": "cascade_depth_increased",
+      "team_id": "orange",
+      "cascade_depth": 2
+    },
+    {
+      "id": "v1-e34",
+      "sequence": 34,
+      "time_seconds": 9.4,
+      "kind": "cell_exploded",
+      "team_id": "orange",
+      "cell": [
+        2,
+        2
+      ],
+      "cascade_depth": 2
+    },
+    {
+      "id": "v1-e35",
+      "sequence": 35,
+      "time_seconds": 9.42,
+      "kind": "player_endangered",
+      "team_id": "cyan",
+      "cascade_depth": 2
+    },
+    {
+      "id": "v1-e36",
+      "sequence": 36,
+      "time_seconds": 9.44,
+      "kind": "cascade_depth_increased",
+      "team_id": "orange",
+      "cascade_depth": 3
+    },
+    {
+      "id": "v1-e37",
+      "sequence": 37,
+      "time_seconds": 9.56,
+      "kind": "cell_exploded",
+      "team_id": "orange",
+      "cell": [
+        1,
+        2
+      ],
+      "cascade_depth": 3
+    },
+    {
+      "id": "v1-e38",
+      "sequence": 38,
+      "time_seconds": 9.59,
+      "kind": "cascade_depth_increased",
+      "team_id": "orange",
+      "cascade_depth": 4
+    },
+    {
+      "id": "v1-e39",
+      "sequence": 39,
+      "time_seconds": 9.69,
+      "kind": "cell_exploded",
+      "team_id": "orange",
+      "cell": [
+        0,
+        2
+      ],
+      "cascade_depth": 4
+    },
+    {
+      "id": "v1-e40",
+      "sequence": 40,
+      "time_seconds": 9.73,
+      "kind": "neighbor_captured",
+      "team_id": "orange",
+      "cell": [
+        0,
+        1
+      ],
+      "previous_team_id": "cyan",
+      "cascade_depth": 4
+    },
+    {
+      "id": "v1-e41",
+      "sequence": 41,
+      "time_seconds": 10.1,
+      "kind": "player_eliminated",
+      "team_id": "cyan"
+    },
+    {
+      "id": "v1-e42",
+      "sequence": 42,
+      "time_seconds": 10.55,
+      "kind": "winner_declared",
+      "team_id": "orange"
+    }
+  ],
+  "metadata": {
+    "purpose": "Synthetic audio-contract demonstration, not a genuine match or complete legal-state history.",
+    "notes": "The chain uses illustrative precharged cells. MS04 rules, elimination and excess-orb semantics remain undecided.",
+    "preview_fps": 30
+  }
+}

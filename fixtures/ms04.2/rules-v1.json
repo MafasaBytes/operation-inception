@@ -1,0 +1,31 @@
+{
+  "schema_version": "ms04.2.rules-fixture.v1",
+  "fixture_id": "ms04.2.rules.v1",
+  "synthetic": true,
+  "scenarios": [
+    {
+      "id": "corner-capture-victory",
+      "players": ["cyan", "orange"],
+      "max_cascade_steps": 10000,
+      "moves": [
+        {"player_id": "cyan", "cell": [0, 0]},
+        {"player_id": "orange", "cell": [0, 1]},
+        {"player_id": "cyan", "cell": [0, 0]}
+      ]
+    },
+    {
+      "id": "two-depth-cascade",
+      "players": ["cyan", "orange"],
+      "max_cascade_steps": 10000,
+      "moves": [
+        {"player_id": "cyan", "cell": [0, 0]},
+        {"player_id": "orange", "cell": [8, 5]},
+        {"player_id": "cyan", "cell": [0, 1]},
+        {"player_id": "orange", "cell": [8, 4]},
+        {"player_id": "cyan", "cell": [0, 1]},
+        {"player_id": "orange", "cell": [7, 5]},
+        {"player_id": "cyan", "cell": [0, 0]}
+      ]
+    }
+  ]
+}

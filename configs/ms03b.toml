@@ -1,0 +1,13 @@
+# One authored Color War treatment, restricted to the phone-review format.
+seed = 3032
+width = 720
+height = 1280
+fps = 30
+duration_seconds = 24.0
+neutral_count = 40
+bead_radius = 10.5             # Logical coordinates are 360 x 640.
+arena_radius = 195.0
+arena_y_stretch = 1.25
+reset_seconds = 23.9
+video_bitrate = "8M"
+audio_sample_rate = 48000

@@ -1,0 +1,27 @@
+# Coordinates are measured in canvas widths; the canvas is 1 by 16/9.
+[simulation]
+seed = 1001
+rings = 7                       # Particle count = 1 + 3*rings*(rings+1) = 169
+target_radius = 0.40
+particle_radius = 0.0075
+initial_margin = 0.075
+drift_speed = 0.025
+curve_strength = 0.12
+intro_seconds = 0.8
+convergence_seconds = 5.2
+stagger_seconds = 0.9
+hold_seconds = 1.4
+
+[render]
+preview_width = 360
+preview_height = 640
+final_width = 1080
+final_height = 1920
+fps = 30
+supersample = 2
+background = "#0b1420"
+particle_color = "#f5d9a0"
+accent_color = "#79c9c0"
+trail_seconds = 0.045
+resolution_pulse = 0.18
+crf = 18

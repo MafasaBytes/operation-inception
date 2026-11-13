@@ -1,0 +1,41 @@
+schema_version = "ms04.3.search-config.v1"
+
+[search]
+search_id = "ms04.3.three-team.v1"
+base_seed = 4300
+candidate_count = 12
+max_turns = 240
+rows = 9
+columns = 6
+max_cascade_steps = 10000
+players = ["cyan", "orange", "violet"]
+
+[[policies]]
+player_id = "cyan"
+kind = "tactical"
+capture_weight = 3.0
+explosion_weight = 1.5
+elimination_weight = 18.0
+victory_weight = 40.0
+charge_weight = 1.0
+territory_weight = 1.25
+
+[[policies]]
+player_id = "orange"
+kind = "tactical"
+capture_weight = 3.0
+explosion_weight = 1.5
+elimination_weight = 18.0
+victory_weight = 40.0
+charge_weight = 1.0
+territory_weight = 1.25
+
+[[policies]]
+player_id = "violet"
+kind = "tactical"
+capture_weight = 3.0
+explosion_weight = 1.5
+elimination_weight = 18.0
+victory_weight = 40.0
+charge_weight = 1.0
+territory_weight = 1.25
