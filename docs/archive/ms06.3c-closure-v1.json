@@ -1,0 +1,29 @@
+{
+  "format": "inception-ms06.3c-closure-v1",
+  "algorithm": "sha256",
+  "closed_on": "2026-11-14",
+  "status": "Closed before rendering \u2014 production-scale packing sensitivity; no creative review artifact produced.",
+  "rules_version": "PB-1.2",
+  "no_media_produced": true,
+  "output_files_present": [
+    "outputs/ms06.3c/ms06.3c-robustness.json"
+  ],
+  "files": {
+    "configs/ms06.3c.json": "2181997d1600e3243206be45e0baac7cae0426e484467603f0b4d5c5b83bd4f6",
+    "outputs/ms06.3c/ms06.3c-robustness.json": "680f294e04d17a64f00c6c96dd1be172b9187808956e6eddab8d03dd3d0869eb",
+    "docs/MS06.3C.md": "bf8e905f5a68dd62f01134a08be96bf6395b31aa371c23205ab100ba3397a4c9",
+    "src/inception/ms06_3c_scenario.py": "599f776a20205946e2171ebf345ee0928c09b0c8b2592a5f652ad39257162a87",
+    "tests/test_ms06_3c.py": "f24b77ef2b96c810ca4ff55afa7e2706fefc43a974e8fe8cf4ed93f250f9122a"
+  },
+  "owner_decision": {
+    "PB-1.2": "Technically valid research",
+    "PB-1.x": "Retired as Pressure Bloom production candidate; further scenario or geometry tuning prohibited",
+    "blockers": [
+      "12 simultaneous first splits",
+      "persistent overlap reached 30-tick limit",
+      "packing-stall draw",
+      "no crush reversal or rupture"
+    ],
+    "next": "One bounded PB-2.0 capacity-based prototype; rules independent of layout"
+  }
+}

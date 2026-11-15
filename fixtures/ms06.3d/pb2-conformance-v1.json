@@ -1,0 +1,1166 @@
+{
+  "schema": "pb2.conformance-fixture.v1",
+  "rules": {
+    "version": "PB-2.0",
+    "hz": 120,
+    "packing_efficiency": 0.78,
+    "split_base": 0.84,
+    "split_resistance_span": 0.18,
+    "split_ticks": 30,
+    "split_cadence_ticks": 34,
+    "crush_base": 1.34,
+    "crush_resistance_span": 0.18,
+    "crush_ticks": 18,
+    "crush_cadence_ticks": 66,
+    "wall_pressure_span": 0.95,
+    "wall_strain": 0.6,
+    "wall_rupture": 0.8,
+    "wall_ticks": 48,
+    "contain_ticks": 72,
+    "release_ticks": 84,
+    "discharge_delay_ticks": 12,
+    "discharge_cadence_ticks": 7,
+    "max_generation": 3,
+    "max_live": 96,
+    "max_events": 20000,
+    "max_ticks": 2160,
+    "nonprogress_ticks": 240
+  },
+  "scenarios": [
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.split.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.10108694310193403
+        ],
+        [
+          1,
+          0.10108694310193403
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r003",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.crush.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.04296195081832196
+        ],
+        [
+          1,
+          0.04296195081832196
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.rupture.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 1.2,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.19639748945518612
+        ],
+        [
+          1,
+          0.19639748945518612
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r003",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r004",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r005",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r006",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r007",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r008",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r009",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r010",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r011",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r012",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r013",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r014",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r015",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.strain.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 1.2,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.12888585245496587
+        ],
+        [
+          1,
+          0.12888585245496587
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r003",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r004",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r005",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r006",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r007",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.contain.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.15466302294595904
+        ],
+        [
+          1,
+          0.15466302294595904
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.extinction.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.014320650272773986
+        ],
+        [
+          1,
+          0.014320650272773986
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.reversal.v1",
+      "seed": 0,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.02974288902806905
+        ],
+        [
+          1,
+          0.02974288902806905
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.draw.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.1104735878185422
+        ],
+        [
+          1,
+          0.1104735878185422
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ],
+      "max_ticks": 30
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.invalid.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.1104735878185422
+        ],
+        [
+          1,
+          0.1104735878185422
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": -0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ]
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.event-limit.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          0.1104735878185422
+        ],
+        [
+          1,
+          0.1104735878185422
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 3,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 3,
+          "radius": 0.08
+        }
+      ],
+      "max_events": 2
+    },
+    {
+      "rules": "PB-2.0",
+      "id": "pb2.live-cap.v1",
+      "seed": 2,
+      "width": 1.0,
+      "packing_efficiency": 0.78,
+      "weakness": {
+        "L0": 0.1,
+        "L1": 0.1,
+        "R0": 0.1,
+        "R1": 0.1
+      },
+      "schedule": [
+        [
+          0,
+          2.356769873462233
+        ],
+        [
+          1,
+          2.356769873462233
+        ]
+      ],
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r002",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r003",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r004",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r005",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r006",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r007",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r008",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r009",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r010",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r011",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r012",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r013",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r014",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r015",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r016",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r017",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r018",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r019",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r020",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r021",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r022",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r023",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r024",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r025",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r026",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r027",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r028",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r029",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r030",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r031",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r032",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r033",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r034",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r035",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r036",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r037",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r038",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r039",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r040",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r041",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r042",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r043",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r044",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r045",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r046",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r047",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r048",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r049",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r050",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r051",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r052",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r053",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r054",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r055",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r056",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r057",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r058",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r059",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r060",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r061",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r062",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r063",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r064",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r065",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r066",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r067",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r068",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r069",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r070",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r071",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r072",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r073",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r074",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r075",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r076",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r077",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r078",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r079",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r080",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r081",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r082",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r083",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r084",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r085",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r086",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r087",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r088",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r089",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r090",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r091",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r092",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r093",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r094",
+          "lineage": "cyan",
+          "generation": 2,
+          "radius": 0.08
+        },
+        {
+          "id": "r095",
+          "lineage": "orange",
+          "generation": 2,
+          "radius": 0.08
+        }
+      ]
+    }
+  ]
+}

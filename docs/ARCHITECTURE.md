@@ -44,6 +44,29 @@ model, game engine, renderer, FFmpeg, or voice/model service. The standalone
 fixture remains synthetic; MS04.4 now supplies a separate genuine-match adapter
 without changing the audio package. [MS05](MS05.md) defines the contract.
 
+## Pressure Bloom: one separate directed format
+
+**Production research now uses PB-2.0 capacity pressure.** PB-1.x modules below
+remain preserved research infrastructure; further PB-1.x scenario/geometry tuning
+is prohibited. `capacity_bloom` owns pure area/capacity rules, seeded resistance,
+global cadences, logical wall stress and deterministic discharge. `capacity_layout`
+receives frozen truth and can fail presentation without changing the game result.
+`ms06_3d_scenario` audits one directed configuration and eight nearby probes before
+freezing states/events/layout. `capacity_presentation` and `capacity_audio` consume
+that frozen record independently; `ms06_3d` reuses the existing encoding path.
+This is a narrow second implementation, not a shared format/plugin framework.
+See [MS06.3D](MS06.3D.md); technical gates do not establish creative acceptance.
+
+`inception.pressure_bloom` owns PB-1.1 truth at 120 Hz. The narrow
+`ms06_3_scenario` audit calls it before presentation, freezes one authored scenario
+and checks exactly eight nearby perturbations twice each. `ms06_3` exports only
+a gate-passing immutable timeline. `pressure_presentation` imports no engine or
+audio module; `pressure_audio` consumes immutable genuine events on the same
+absolute clock and imports no renderer or engine. Geometry, membership and
+outcomes remain simulation facts. The 720×1280 review awaits owner-and-wife phone
+review; see [MS06.3](MS06.3.md). There is no shared format/plugin framework or
+MS06.4 candidate generation. Existing MS04/MS05 and frozen artifacts stay intact.
+
 ## Frozen experimental infrastructure
 
 Existing top-level particle modules (`simulation.py`, `causal.py`, `ms03.py`,

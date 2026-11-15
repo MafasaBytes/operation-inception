@@ -1,0 +1,288 @@
+{
+  "schema": "ms06.3d.directed-capacity.v1",
+  "rules": "PB-2.0",
+  "id": "pressure-bloom-ms06.3d.v1",
+  "seed": 6304,
+  "layout_seed": 3640,
+  "width": 1.0,
+  "packing_efficiency": 0.78,
+  "weakness": {
+    "L0": 1.12,
+    "L1": 0.86,
+    "R0": 0.88,
+    "R1": 0.84
+  },
+  "schedule": [
+    [
+      0,
+      0.9796735650715778
+    ],
+    [
+      0.65,
+      0.9096968818521793
+    ],
+    [
+      1.4,
+      0.8585903154559895
+    ],
+    [
+      3.0,
+      0.7491621379959124
+    ],
+    [
+      4.8,
+      0.6475808311490091
+    ],
+    [
+      5.4,
+      0.5923607602758377
+    ],
+    [
+      6.5,
+      0.5660336153746893
+    ],
+    [
+      8.7,
+      0.5660336153746893
+    ],
+    [
+      9.4,
+      0.5458181291113077
+    ],
+    [
+      10.700000000000001,
+      0.34420963097109486
+    ],
+    [
+      11.700000000000001,
+      0.33515148278764506
+    ]
+  ],
+  "balls": [
+    {
+      "id": "r000.0.0",
+      "parent": "r000.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.081773469132869
+    },
+    {
+      "id": "r001.0.0",
+      "parent": "r001.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08225955243936096
+    },
+    {
+      "id": "r002.0.0",
+      "parent": "r002.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08249785117821785
+    },
+    {
+      "id": "r003.0.0",
+      "parent": "r003.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08048106170270922
+    },
+    {
+      "id": "r004.0.0",
+      "parent": "r004.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08271666009145236
+    },
+    {
+      "id": "r005.0.0",
+      "parent": "r005.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08054109109511084
+    },
+    {
+      "id": "r006.0.0",
+      "parent": "r006.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08109608977528546
+    },
+    {
+      "id": "r007.0.0",
+      "parent": "r007.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.07902638481465524
+    },
+    {
+      "id": "r008.0.0",
+      "parent": "r008.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08149272255687895
+    },
+    {
+      "id": "r009.0.0",
+      "parent": "r009.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08286694130820028
+    },
+    {
+      "id": "r010.0.0",
+      "parent": "r010.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08356654927399751
+    },
+    {
+      "id": "r011.0.0",
+      "parent": "r011.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08049151804999356
+    },
+    {
+      "id": "r012.0.0",
+      "parent": "r012.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.07806421632393358
+    },
+    {
+      "id": "r013.0.0",
+      "parent": "r013.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08366144569929058
+    },
+    {
+      "id": "r014.0.0",
+      "parent": "r014.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08142186770655185
+    },
+    {
+      "id": "r015.0.0",
+      "parent": "r015.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.07998474473762626
+    },
+    {
+      "id": "r016.0.0",
+      "parent": "r016.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08276922071201574
+    },
+    {
+      "id": "r017.0.0",
+      "parent": "r017.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.07948215245838332
+    },
+    {
+      "id": "r018.0.0",
+      "parent": "r018.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.07963545142222184
+    },
+    {
+      "id": "r019.0.0",
+      "parent": "r019.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.0836054143812472
+    },
+    {
+      "id": "r020.0.0",
+      "parent": "r020.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.0824839610067263
+    },
+    {
+      "id": "r021.0.0",
+      "parent": "r021.0",
+      "lineage": "orange",
+      "generation": 2,
+      "radius": 0.08056684688300035
+    },
+    {
+      "id": "r022.0.0",
+      "parent": "r022.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.0804023118217761
+    },
+    {
+      "id": "r023.0.0",
+      "parent": "r023.0",
+      "lineage": "cyan",
+      "generation": 2,
+      "radius": 0.08333213413639726
+    },
+    {
+      "id": "r024.0.0.0",
+      "parent": "r024.0.0",
+      "lineage": "orange",
+      "generation": 3,
+      "radius": 0.06174518872584655
+    },
+    {
+      "id": "r025.0.0.0",
+      "parent": "r025.0.0",
+      "lineage": "orange",
+      "generation": 3,
+      "radius": 0.060525594200434296
+    },
+    {
+      "id": "r026.0.0.0",
+      "parent": "r026.0.0",
+      "lineage": "cyan",
+      "generation": 3,
+      "radius": 0.06219972174511734
+    },
+    {
+      "id": "r027.0.0.0",
+      "parent": "r027.0.0",
+      "lineage": "cyan",
+      "generation": 3,
+      "radius": 0.06206566939031946
+    },
+    {
+      "id": "r028.0.0.0",
+      "parent": "r028.0.0",
+      "lineage": "cyan",
+      "generation": 3,
+      "radius": 0.0629265663192561
+    },
+    {
+      "id": "r029.0.0.0",
+      "parent": "r029.0.0",
+      "lineage": "orange",
+      "generation": 3,
+      "radius": 0.062016924755531666
+    },
+    {
+      "id": "r030.0.0.0",
+      "parent": "r030.0.0",
+      "lineage": "cyan",
+      "generation": 3,
+      "radius": 0.06271231444542684
+    },
+    {
+      "id": "r031.0.0.0",
+      "parent": "r031.0.0",
+      "lineage": "cyan",
+      "generation": 3,
+      "radius": 0.06005638225535329
+    }
+  ],
+  "provenance": "Directed PB-2.0 prototype; 24 g2 and8 g3 ancestry excerpts bound new multiplication; no injected pressure clocks or event times. Constants frozen before authoring. Layout seed has no rule authority."
+}

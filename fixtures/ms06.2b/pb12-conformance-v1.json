@@ -1,0 +1,1245 @@
+{
+  "schema": "ms06.2b.pb12-fixtures.v1",
+  "rules": "PB-1.2",
+  "initialization": "No initial debt, load, strain or qualifying-clock history. All cases undergo deterministic pre-settling.",
+  "scenarios": [
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.free-travel.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.5,
+          "y": 0.3,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.6
+          ],
+          [
+            1,
+            0.3
+          ]
+        ],
+        "max_ticks": 2160,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "containment",
+        "final_tick": 192
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.jam-pressure.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.03375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r000.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.10125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r002.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.16875,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r002.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 0.0675,
+        "height": 0.8,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.25
+          ],
+          [
+            0.2,
+            0.2025
+          ],
+          [
+            1,
+            0.0825
+          ]
+        ],
+        "max_ticks": 480,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "draw",
+        "reason": "nonprogress"
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.crush-release.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.08,
+          "y": 0.08,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.08,
+          "y": 0.19375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 0.16,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.2,
+            0.22
+          ],
+          [
+            0.8,
+            0.08
+          ]
+        ],
+        "max_ticks": 480,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "containment",
+        "ball_crushed": 1,
+        "ball_split": 0,
+        "final_tick": 232
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.settling.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.3,
+          "y": 0.65,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "x": 0.6,
+          "y": 0.4,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            1.0
+          ],
+          [
+            0.5,
+            0.8
+          ]
+        ],
+        "max_ticks": 360,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "containment"
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.settling-failure.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.5,
+          "y": 0.3,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.6
+          ],
+          [
+            1,
+            0.3
+          ]
+        ],
+        "max_ticks": 2160,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 3,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "invalid",
+        "reason": "settling_time_limit"
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.sub-strain.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.03375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r000.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.10125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r002.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.16875,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r002.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 0.0675,
+        "height": 0.8,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.25
+          ],
+          [
+            0.2,
+            0.2025
+          ],
+          [
+            1,
+            0.0825
+          ]
+        ],
+        "max_ticks": 480,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "draw",
+        "wall_strained": 0
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.wall-strain.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.03375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r000.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.10125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r002.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.16875,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r002.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r003.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.23625000000000002,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r003.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r004.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.30375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r004.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r005.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.37125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r005.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r006.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.43875000000000003,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r006.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r007.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.5062500000000001,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r007.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.62
+          ],
+          [
+            0.2,
+            0.54
+          ],
+          [
+            1,
+            0.436
+          ]
+        ],
+        "max_ticks": 480,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "draw",
+        "wall_strained": 1,
+        "wall_ruptured": 0
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.rupture-escape.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.03375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r000.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.10125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r002.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.16875,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r002.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r003.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.23625000000000002,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r003.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r004.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.30375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r004.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r005.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.37125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r005.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r006.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.43875000000000003,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r006.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r007.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.5062500000000001,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r007.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.62
+          ],
+          [
+            0.2,
+            0.54
+          ],
+          [
+            1,
+            0.4056
+          ]
+        ],
+        "max_ticks": 360,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "rupture",
+        "wall_ruptured": 1,
+        "ball_escaped": 8,
+        "ball_crushed": 0,
+        "final_tick": 232
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.containment.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.2,
+          "y": 0.08,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "x": 0.7,
+          "y": 0.08,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.5,
+            0.16
+          ]
+        ],
+        "max_ticks": 360,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "containment",
+        "wall_ruptured": 0
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.nonprogress.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.03375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r000.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.10125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r002.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.16875,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r002.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 0.0675,
+        "height": 0.8,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.25
+          ],
+          [
+            0.2,
+            0.2025
+          ],
+          [
+            1,
+            0.15
+          ]
+        ],
+        "max_ticks": 480,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "draw",
+        "reason": "nonprogress"
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.invalid-nonfinite.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": "nan",
+          "y": 0.3,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.6
+          ],
+          [
+            1,
+            0.3
+          ]
+        ],
+        "max_ticks": 2160,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "invalid",
+        "reason": "nonfinite_ball"
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.invalid-overlap.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.5,
+          "y": 0.3,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001",
+          "lineage": "orange",
+          "x": 0.51,
+          "y": 0.3,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.6
+          ],
+          [
+            1,
+            0.3
+          ]
+        ],
+        "max_ticks": 2160,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "invalid",
+        "reason": "initial_overlap_or_impossible_placement"
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.same-tick-crush-rupture.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.03375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r000.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r001.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.10125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r001.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r002.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.16875,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r002.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r003.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.23625000000000002,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r003.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r004.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.30375,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r004.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r005.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.37125,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r005.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r006.0.0.0",
+          "lineage": "cyan",
+          "x": 0.03375,
+          "y": 0.43875000000000003,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r006.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        },
+        {
+          "id": "r007.0.0.0",
+          "lineage": "orange",
+          "x": 0.03375,
+          "y": 0.5062500000000001,
+          "radius": 0.03375,
+          "generation": 3,
+          "parent": "r007.0.0",
+          "parent_generation": 2,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.62
+          ],
+          [
+            0.2,
+            0.54
+          ],
+          [
+            1,
+            0.4056
+          ],
+          [
+            1.1833333333333333,
+            0.3946
+          ],
+          [
+            2,
+            0.3946
+          ]
+        ],
+        "max_ticks": 360,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "rupture",
+        "ball_crushed": 1,
+        "wall_ruptured": 1,
+        "ball_escaped": 7,
+        "final_tick": 232
+      }
+    },
+    {
+      "rules": "PB-1.2",
+      "id": "pb12.split-generation-control.v1",
+      "seed": 6212,
+      "balls": [
+        {
+          "id": "r000",
+          "lineage": "cyan",
+          "x": 0.5,
+          "y": 0.08,
+          "radius": 0.08,
+          "generation": 0,
+          "parent": null,
+          "parent_generation": null,
+          "vx": 0.0,
+          "vy": 0.0,
+          "status": "inside"
+        }
+      ],
+      "parameters": {
+        "width": 1.0,
+        "height": 2.2,
+        "reference_radius": 0.08,
+        "drive_ramp_distance": 0.16,
+        "schedule": [
+          [
+            0,
+            0.24
+          ],
+          [
+            0.2,
+            0.16
+          ],
+          [
+            1,
+            0.03
+          ]
+        ],
+        "max_ticks": 600,
+        "max_events": 20000,
+        "nonprogress_ticks": 240,
+        "projection_passes": 64,
+        "overlap_ticks": 30,
+        "excessive_overlap_ratio": 0.5,
+        "rules_version": "PB-1.2",
+        "gravity": 1.2,
+        "damping_per_second": 8.0,
+        "physics_substeps": 4,
+        "settling_max_ticks": 2400,
+        "settling_speed_tolerance": 0.002,
+        "settling_penetration_tolerance": 1e-06,
+        "catchup_speed": 0.4,
+        "catchup_policy": "bounded-contact-rollback-v1",
+        "wall_capacity": 2.5
+      },
+      "expected": {
+        "outcome": "draw",
+        "reason": "duration_limit",
+        "ball_split": 7,
+        "ball_crushed": 0,
+        "final_tick": 600
+      }
+    }
+  ]
+}
